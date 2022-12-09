@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.side-left {
+  display: grid;
+  justify-items: start; /* justify-items отвечает за позиционирование по 
+  горизонтали */
+
+  align-items: end; /* за позиционирование по вертикали */
+  background-image: url(../img/bg_login_page_1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* на случай, если картинка будет меньше блока, чтоб она не повторялась*/
+  padding: 80px 100px;
+}
+
+.block-text > h3 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.block-text > p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.side-right {
+  background-color: #ffffff;
+}
+
+.content {
+  width: 430px;
+  margin: 130px auto;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: left;
+}
+
+.logo > span {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #1d1d1b;
+}
+
+.greeting {
+  margin-top: 140px;
+}
+
+.greeting > h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 49px;
+
+  color: #000000;
+}
+
+.greeting > span {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.google-btn {
+  margin-top: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 12px;
+  gap: 16px;
+  width: 100%;
+  height: 66px;
+  border: 1px solid #c2c2c2;
+  border-radius: 6px; /* это закругление уголков */
+  background-color: #ffffff;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.google-btn:hover {
+  background-color: #e8e8e8;
+}
+
+.google-btn > span {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.divider {
+  margin-top: 32px;
+  margin-bottom: 22px;
+  display: grid;
+  grid-template-columns: 1fr 37px 1fr;
+  align-items: center;
+  color: #7a7a7a;
+}
+
+.divider > span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 0 10px;
+  margin-bottom: -11px;
+  color: #000000;
+}
+
+.line {
+  height: 1px;
+  background-color: #000000;
+}
+
+input[type="password"],
+input[type="email"] {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0px;
+  font-size: 20px;
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-bottom: 1px solid #c2c2c2;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.set {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* пространство посередине, таким образом дочерние элементы будут раздвинуты по краям, чтоб оставить пространство в центре*/
+}
+
+.set > a {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 36px;
+  width: 100%;
+  height: 60px;
+  background-color: #060606;
+  border-radius: 6px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-top: 63px;
+  cursor: pointer;
+}
+
+.register {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.register > span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.register > a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #000000;
+  cursor: pointer;
+}
